@@ -1,5 +1,5 @@
 # jik-ji-Binder
-jik-ji Binder 프로젝트 이슈, 질문 관리
+jik-ji Binder 프로젝트 이슈, 프로젝트 관리
 
 ### License
 
