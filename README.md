@@ -11,4 +11,4 @@ node-webkit's code uses the MIT license.
 https://github.com/nwjs/nw.js
 ```
 
-[API Documents](https://vulcan9.github.io/jik-ji-Binder/README)
+[API Documents](https://vulcan9.github.io/jik-ji-Binder/)
