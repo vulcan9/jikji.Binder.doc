@@ -1,4 +1,4 @@
-# API Reference 0.2
+# API Reference ver.0.2.x
 
 + [콘텐츠의 설정](#콘텐츠의 설정)
 + [window.jj 객체](#window.jj 객체)

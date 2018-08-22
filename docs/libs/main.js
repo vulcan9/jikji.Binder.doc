@@ -11,7 +11,9 @@
 })(window.jj);
 
 function link(page, target){
-	var page = '/jik-ji-Binder/' + page.replace(/\.md$/, '');
+	if(page.search(/(\.\/|http:|https:)/) < 0){
+		page = '/jik-ji-Binder/' + page.replace(/\.md$/, '');
+	}
 	if(!target || target === '_self'){
 		window.location.href = page;
 	}else{
