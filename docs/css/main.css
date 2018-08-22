@@ -39,9 +39,12 @@ body {
     background: #002b36;
     /*color: #cac5c0;*/
 	text-shadow: none;
-
-
 }
+code{
+	text-shadow: none;
+	color: inherit;
+}
+
 
 .markdown-body .hljs-comment, .markdown-body .hljs-quote {
     color: rgba(189, 189, 189, 0.4);
