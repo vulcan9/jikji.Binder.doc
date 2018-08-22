@@ -113,6 +113,7 @@ section{
 }
 nav{
     /* position: fixed; */
+    width: 240px;
 	position: relative;
     top: 0;
     left: initial;
@@ -122,5 +123,5 @@ nav{
 nav ul{
     width: 240px;
 	margin: 20px 0;
-	pading: 0;
+	padding: 0;
 }
