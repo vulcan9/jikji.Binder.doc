@@ -105,8 +105,15 @@ header, #banner{
     position: relative;
 }
 section{
-    margin-top: 20px; width: auto;
+    margin: 20px; width: auto;
 }
 .wrapper{
     min-width: 800px;
+}
+nav{
+
+}
+nav ul{
+    width: 240px;
+	margin: 20px 0;
 }
