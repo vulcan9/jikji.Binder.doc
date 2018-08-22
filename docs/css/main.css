@@ -96,7 +96,7 @@ code{
 
 @media print, screen and (max-width: 1060px)
 section {
-    max-width: initial;
+    max-width: 100%;
 }
 
 header, #banner{
@@ -112,7 +112,8 @@ header, #banner{
     position: relative;
 }
 section{
-    margin: 20px; width: auto;
+    margin: 20px;
+    width: 100%;
 }
 .wrapper{
     min-width: 800px;
