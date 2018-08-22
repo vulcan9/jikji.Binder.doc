@@ -1,8 +1,7 @@
 # API Reference ver.0.5.x
 
-> <web>
-web 버전 사용에 대한 내용은 <a href="javascript:void(link('ver/release_0.4.md'));">Release Note(ver 0.4)</a> 문서를 참고 하세요.
-</web>
+> <web></web>web 버전 사용에 대한 내용은 <a href="javascript:void(link('ver/release_0.4.md'));">Release Note(ver 0.4)</a> 문서를 참고 하세요.
+
 
 
 + [콘텐츠의 설정](#콘텐츠의 설정)
