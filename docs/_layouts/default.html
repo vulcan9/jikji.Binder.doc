@@ -41,17 +41,15 @@
           </div>
         {% endif %}
       </div><!-- end banner -->
-
-    <div class="wrapper">
+ 
+    <div class="wrapper" layout-raw>
       <nav>
         <ul></ul>
       </nav>
       <section>
-
-<div class="markdown-body">
-    {{ content }}
-</div>
-
+		<div class="markdown-body" flex>
+			{{ content }}
+		</div>
       </section>
       <footer>
         {% if site.github.is_project_page %}

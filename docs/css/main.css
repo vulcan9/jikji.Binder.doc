@@ -16,13 +16,13 @@ body {
 	*/
     /*border: 1px solid red;*/
 }
-.markdown-body[layout-raw] {
+body [layout-raw] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-direction: row;
 }
-.markdown-body[flex] {
+body [flex] {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -100,4 +100,10 @@ header, #banner{
 }
 #banner .fork {
     position: relative;
+}
+section{
+    margin-top: 20px; width: auto;
+}
+.wrapper{
+    min-width: 800px;
 }
