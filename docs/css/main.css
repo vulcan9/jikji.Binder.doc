@@ -29,14 +29,14 @@ body {
 .markdown-body hr { height: 1px; }
 .markdown-body .highlight pre, .markdown-body pre {
     /*background-color: #232323;*/
-    /*background-color: #002b36;*/
+    background-color: #002b36;
     border-radius: 5px;
 }
 .markdown-body pre code {
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    background: #232323;
+    background: #002b36;
     /*color: #cac5c0;*/
 	text-shadow: none;
 
