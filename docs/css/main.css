@@ -87,8 +87,3 @@ code{
     padding: 0.5em;
     background: #f6f8fa;
 }
-
-@media print, screen and (max-width: 1060px)
-nav {
-    display: none;
-}
