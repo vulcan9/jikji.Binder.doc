@@ -1,13 +1,20 @@
 <!doctype html>
-<html ng-app="app">
-<head>
-    <meta charset="utf-8"/>
-    <title>Jik-ji Binder 도움말</title>
+<html lang="{{ site.lang | default: "en-US" }}" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!--<link rel="stylesheet"
-          href="https://assets-cdn.github.com/assets/frameworks-73b6e7254b4ff47628bc2700deeaccfe68ae11f3b55062485e2e586d8a58246a.css">-->
-    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
-    <!--<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/solarized-dark.css">-->
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+
     <link rel="stylesheet" href="./css/git.css">
     <link rel="stylesheet" href="./css/hightlight_railscasts.css">
 
@@ -19,7 +26,6 @@
     <script src="./libs/marked.min.js"></script>
     <script src="./libs/angular.min.js"></script>
     <script src="./libs/angular-marked.min.js"></script>
-
 
 
 
@@ -39,50 +45,67 @@
                 }
             });
 
-            /*// splash 창 닫기
+            // splash 창 닫기
             if(window.jj && window.jj.opener() && window.jj.opener().closeSplash){
                 window.jj.opener().closeSplash(window);
-            }*/
+            }
         }]);
         app.controller('RootController', function ($scope, marked, $sce, $compile) {});
     </script>
 
     <script src="./libs/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
-    <!--<script src="menu.min.js"></script>-->
+  </head>
+  <body>
 
-</head>
-<body>
+      <header>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+      </header>
 
-<div class="markdown-body">
-    <h1 ver>Jik-ji Binder (ver.<span version><%_version_%></span>)</h1>
-</div>
+      <div id="banner">
+        <span id="logo"></span>
 
+        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+        {% if site.show_downloads %}
+          <div class="downloads">
+            <span>Downloads:</span>
+            <ul>
+              <li><a href="{{ site.github.zip_url }}" class="button">ZIP</a></li>
+              <li><a href="{{ site.github.tar_url }}" class="button">TAR</a></li>
+            </ul>
+          </div>
+        {% endif %}
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        
 <div layout-raw ng-controller="RootController" id="container" class="markdown-body">
     <div flex marked src="" compile="true" id="page">{{ content }}</div>
 </div>
 
-<p style="margin: 20px; text-align: right;" ver>Jik-ji Binder Doc. <span version><%_version_%></span></p>
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
 
-<script>
-    (function(){
-        if(!window.jj) return;
-        var param = window.jj.parameter;
-        var version = (param && param.version) ? param.version : '<%_version_%>';
-        var file = (param && param.file) ? param.file : 'ver/api.md';
-        $('#page').attr('src', "'" + file + "'");
-        $('[version]').html(version);
-    })();
-</script>
-
-<!--
-markdown 문법 :
-https://gist.github.com/ihoneymon/652be052a0727ad59601
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-
-<div flex marked src="'README.md'" compile="true" id="page"></div>
-<script type="text/ng-template" id="README.md"></script>
--->
-
-</body>
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+  </body>
 </html>
