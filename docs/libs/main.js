@@ -4,13 +4,17 @@
 		link: {
 			//jj.link.html('./index.html', '_blank', {parameter: 'ver/release_0.4.md'})
 			html: function(index, target, obj){
-				var page = '/jik-ji-Binder/' + obj.parameter.replace(/\.md$/, '');
-				if(!target || target === '_self'){
-					window.location.href = page;
-				}else{
-					window.open(page, target);
-				}
+				link(obj.parameter, target);
 			}
 		}
 	};
 })(window.jj);
+
+function link(page, target){
+	var page = '/jik-ji-Binder/' + page.replace(/\.md$/, '');
+	if(!target || target === '_self'){
+		window.location.href = page;
+	}else{
+		window.open(page, target);
+	}
+}
