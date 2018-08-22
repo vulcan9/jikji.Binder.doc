@@ -10,5 +10,3 @@ LICENSE 파일을 확인하세요.
 node-webkit's code uses the MIT license.
 https://github.com/nwjs/nw.js
 ```
-
-[API.0.4](./ver/API.0.4)
