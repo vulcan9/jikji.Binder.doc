@@ -137,3 +137,6 @@ nav ul{
 		max-width: 100%!important;
 	}
 }
+nav ul li.tag-h1 a {
+    font-size: 1.2em;
+}
