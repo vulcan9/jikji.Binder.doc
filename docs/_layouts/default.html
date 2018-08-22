@@ -14,47 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 
-
-    <link rel="stylesheet" href="./css/git.css">
-    <link rel="stylesheet" href="./css/hightlight_railscasts.css">
-
-    <script src="./libs/highlight.9.3.0.min.js"></script>
-    <!--<script src="https://highlightjs.org/static/highlight.pack.js"></script>-->
-    <script>hljs.initHighlightingOnLoad();</script>
-
-    <!--https://github.com/Hypercubed/angular-marked-->
-    <script src="./libs/marked.min.js"></script>
-    <script src="./libs/angular.min.js"></script>
-    <script src="./libs/angular-marked.min.js"></script>
-
-
-
-    <script>
-        var app = angular.module('app', ['hc.marked']);
-        app.config(['markedProvider', function (markedProvider) {
-            markedProvider.setOptions({
-                gfm: true,
-                breaks: true,
-                tables: true,
-                highlight: function (code, lang) {
-                    if (lang) {
-                        return hljs.highlight(lang, code, true).value;
-                    } else {
-                        return hljs.highlightAuto(code).value;
-                    }
-                }
-            });
-
-            /*// splash Ã¢ ´Ý±â
-            if(window.jj && window.jj.opener() && window.jj.opener().closeSplash){
-                window.jj.opener().closeSplash(window);
-            }*/
-        }]);
-        app.controller('RootController', function ($scope, marked, $sce, $compile) {});
-    </script>
-
-    <script src="./libs/jquery.min.js"></script>
-    <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
 
