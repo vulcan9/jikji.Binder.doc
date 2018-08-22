@@ -68,8 +68,8 @@ Binder API는 콘텐츠가 로드될때 자동으로 생성되므로 문서내�
 - 열려있는 window 창끼리 통신 및 제어
 - 녹음 기능
 
-> <web>웹 페이지에서 API를 사용하려면 다음 JS파일을 로드하여야 합니다.
-</web>
+> <web></web>웹 페이지에서 API를 사용하려면 다음 JS파일을 로드하여야 합니다.
+
 ```
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="binder_web.min.js"></script>
