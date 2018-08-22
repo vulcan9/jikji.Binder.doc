@@ -106,6 +106,8 @@ header, #banner{
 }
 #banner .fork {
     position: relative;
+    left: 0;
+    margin-left: 0;
 }
 section{
     margin: 20px;
