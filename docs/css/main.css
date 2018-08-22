@@ -140,7 +140,7 @@ nav ul{
 		max-width: 100%!important;
 	}
 	nav{
-		dispaly: block;
+		display: block;
 	}
 }
 nav ul li.tag-h1 a {
