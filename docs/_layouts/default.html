@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang | default: 'en-US' }}" ng-app="app">
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,12 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="./css/git.css">
+    <link rel="stylesheet" href="./css/hightlight_railscasts.css">
+    <script src="./libs/highlight.9.3.0.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="./css/main.css">
 
 
   </head>
@@ -42,10 +48,15 @@
         <ul></ul>
       </nav>
       <section>
-        
-<div layout-raw ng-controller="RootController" id="container" class="markdown-body">
-    <div flex marked src="" compile="true" id="page">{{ content }}</div>
+
+<div class="markdown-body">
+    <h1 ver>Jik-ji Binder (ver.<span version><%_version_%></span>)</h1>
 </div>
+<div layout-raw id="container" class="markdown-body">
+    {{ content }}
+</div>
+
+<p style="margin: 20px; text-align: right;" ver>Jik-ji Binder Doc. <span version><%_version_%></span></p>
 
       </section>
       <footer>
