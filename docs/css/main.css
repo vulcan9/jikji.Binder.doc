@@ -113,7 +113,7 @@ header, #banner{
 }
 section{
     margin: 20px;
-    width: 100%;
+    width: 100% !important;
 }
 .wrapper{
     min-width: 800px;
