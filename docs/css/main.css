@@ -93,9 +93,12 @@ code{
 
 
 header, #banner{
-    position: relative;
+    position: relative; width: auto;
 }
 #banner{
+    left: initial; right: initial;
+	margin-right: initial;
+	padding-right: initial;
     top: 0;
 }
 #banner .fork {
