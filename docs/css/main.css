@@ -53,7 +53,7 @@ code{
     font-style: oblique;
 }
 /* 웹 지원 API 주석 표시 */
-.markdown-body web:after{
+.markdown-body web:before{
     content: 'web';
     color: #f8f8f8;
     font-weight: normal;
