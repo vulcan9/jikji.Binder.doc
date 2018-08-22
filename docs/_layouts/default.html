@@ -46,15 +46,6 @@
     <div class="wrapper" layout-raw>
 
 	  <nav>
-        <ul></ul>
-      </nav>
-
-      <section flex>
-		<div class="markdown-body" flex>
-			{{ content }}
-		</div>
-      </section>
-      <footer>
 	  
 <div style="padding-bottom: 0.3em;border-bottom: 1px solid #eaecef;">
   <div class="tag-h1" onclick="link('/')">Home</div>
@@ -65,7 +56,15 @@
   <div class="tag-h3" onclick="link('ver/API.0.2.md')">API Reference 0.2.x</div>
 </div>
 	  
-	  </footer>
+        <ul></ul>
+      </nav>
+
+      <section flex>
+		<div class="markdown-body" flex>
+			{{ content }}
+		</div>
+      </section>
+      <footer></footer>
     </div>
 
     {% if site.google_analytics %}
