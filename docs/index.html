@@ -1,0 +1,88 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8"/>
+    <title>Jik-ji Binder 도움말</title>
+
+    <!--<link rel="stylesheet"
+          href="https://assets-cdn.github.com/assets/frameworks-73b6e7254b4ff47628bc2700deeaccfe68ae11f3b55062485e2e586d8a58246a.css">-->
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+    <!--<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/solarized-dark.css">-->
+    <link rel="stylesheet" href="css/git.css">
+    <link rel="stylesheet" href="css/hightlight_railscasts.css">
+
+    <script src="libs/highlight.9.3.0.min.js"></script>
+    <!--<script src="https://highlightjs.org/static/highlight.pack.js"></script>-->
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--https://github.com/Hypercubed/angular-marked-->
+    <script src="libs/marked.min.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-marked.min.js"></script>
+
+
+
+
+    <script>
+        var app = angular.module('app', ['hc.marked']);
+        app.config(['markedProvider', function (markedProvider) {
+            markedProvider.setOptions({
+                gfm: true,
+                breaks: true,
+                tables: true,
+                highlight: function (code, lang) {
+                    if (lang) {
+                        return hljs.highlight(lang, code, true).value;
+                    } else {
+                        return hljs.highlightAuto(code).value;
+                    }
+                }
+            });
+
+            // splash 창 닫기
+            if(window.jj && window.jj.opener() && window.jj.opener().closeSplash){
+                window.jj.opener().closeSplash(window);
+            }
+        }]);
+        app.controller('RootController', function ($scope, marked, $sce, $compile) {});
+    </script>
+
+    <script src="libs/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="menu.min.js"></script>
+
+</head>
+<body>
+
+<div class="markdown-body">
+    <h1 ver>Jik-ji Binder (ver.<span version><%_version_%></span>)</h1>
+</div>
+
+<div layout-raw ng-controller="RootController" id="container" class="markdown-body">
+    <div flex marked src="" compile="true" id="page"></div>
+</div>
+
+<p style="margin: 20px; text-align: right;" ver>Jik-ji Binder Doc. <span version><%_version_%></span></p>
+
+<script>
+    (function(){
+        if(!window.jj) return;
+        var param = window.jj.parameter;
+        var version = (param && param.version) ? param.version : '<%_version_%>';
+        var file = (param && param.file) ? param.file : 'ver/api.md';
+        $('#page').attr('src', "'" + file + "'");
+        $('[version]').html(version);
+    })();
+</script>
+
+<!--
+markdown 문법 :
+https://gist.github.com/ihoneymon/652be052a0727ad59601
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+<div flex marked src="'README.md'" compile="true" id="page"></div>
+<script type="text/ng-template" id="README.md"></script>
+-->
+
+</body>
+</html>

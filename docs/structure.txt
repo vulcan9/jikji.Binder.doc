@@ -1,0 +1,24 @@
+https://jekyllrb.com/docs/structure/
+
+.
+戍式式 _config.yml
+戍式式 _data
+|   戌式式 members.yml
+戍式式 _drafts
+|   戍式式 begin-with-the-crazy-ideas.md
+|   戌式式 on-simplicity-in-technology.md
+戍式式 _includes
+|   戍式式 footer.html
+|   戌式式 header.html
+戍式式 _layouts
+|   戍式式 default.html
+|   戌式式 post.html
+戍式式 _posts
+|   戍式式 2007-10-29-why-every-programmer-should-play-nethack.md
+|   戌式式 2009-04-26-barcamp-boston-4-roundup.md
+戍式式 _sass
+|   戍式式 _base.scss
+|   戌式式 _layout.scss
+戍式式 _site
+戍式式 .jekyll-metadata
+戌式式 index.html # can also be an 'index.md' with valid YAML Frontmatter
