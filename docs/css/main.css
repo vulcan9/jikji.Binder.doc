@@ -5,6 +5,7 @@ body {
 	margin: 0;
     padding: 0;
     min-width: initial;
+	font-weight: initial;
 }
 
 .markdown-body{
