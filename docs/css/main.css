@@ -97,6 +97,7 @@ code{
 
 header, #banner{
     position: relative; width: auto;
+	display: none;
 }
 #banner{
     left: initial; right: initial;
