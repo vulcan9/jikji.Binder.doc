@@ -109,11 +109,18 @@ section{
 }
 .wrapper{
     min-width: 800px;
+	width: 100%;
 }
 nav{
-
+    /* position: fixed; */
+	position: relative;
+    top: 0;
+    left: initial;
+	margin: 20px 0;
+    text-align: right;
 }
 nav ul{
     width: 240px;
 	margin: 20px 0;
+	pading: 0;
 }
