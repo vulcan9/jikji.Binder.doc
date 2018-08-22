@@ -94,9 +94,6 @@ code{
 
 /*---------------------------------*/
 
-@media print, screen and (max-width: 1060px) section {
-    max-width: 100%!important;
-}
 
 header, #banner{
     position: relative; width: auto;
@@ -131,4 +128,12 @@ nav ul{
     width: 240px;
 	margin: 20px 0;
 	padding: 0;
+}
+
+@media print, screen and (max-width: 480px),
+@media print, screen and (max-width: 720px),
+@media print, screen and (max-width: 1060px){
+	section {
+		max-width: 100%!important;
+	}
 }
