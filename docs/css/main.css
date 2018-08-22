@@ -91,6 +91,12 @@ code{
     background: #f6f8fa;
 }
 
+/*---------------------------------*/
+
+@media print, screen and (max-width: 1060px)
+section {
+    max-width: initial;
+}
 
 header, #banner{
     position: relative; width: auto;
