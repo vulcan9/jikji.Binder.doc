@@ -1,6 +1,6 @@
-var jj = (function(jj){
+(function(jj){
 	if(jj) return;
-	jj = {
+	window.jj = {
 		link: {
 			//jj.link.html('./index.html', '_blank', {parameter: 'ver/release_0.4.md'})
 			html: function(index, target, obj){
@@ -9,5 +9,4 @@ var jj = (function(jj){
 			}
 		}
 	};
-	return jj;
 })(window.jj);
