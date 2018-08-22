@@ -1,5 +1,7 @@
 > API Reference
-<web></web> web 버전 사용에 대한 내용은 <a href="javascript:void(jj.link.html('./index.html', '_blank', {parameter: 'ver/release_0.4.md'}));">Release Note(ver 0.4)</a> 문서를 참고 하세요.
+<web>
+web 버전 사용에 대한 내용은 <a href="javascript:void(jj.link.html('./index.html', '_blank', {parameter: 'ver/release_0.4.md'}));">Release Note(ver 0.4)</a> 문서를 참고 하세요.
+</web>
 
 + [콘텐츠의 설정](#콘텐츠의 설정)
 + [window.jj 객체](#window.jj 객체)
@@ -66,7 +68,8 @@ Binder API는 콘텐츠가 로드될때 자동으로 생성되므로 문서내�
 - 열려있는 window 창끼리 통신 및 제어
 - 녹음 기능
 
-<web></web> 웹 페이지에서 API를 사용하려면 다음 JS파일을 로드하여야 합니다.
+<web>웹 페이지에서 API를 사용하려면 다음 JS파일을 로드하여야 합니다.
+</web>
 ```
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="binder_web.min.js"></script>
@@ -453,7 +456,7 @@ jj.native.download('경로 (String)', function(response, data){
             - 'save' : 파일 다이얼로그 창에서 선택한 파일 저장 경로
             - 'cancel' : 전달값 없음
             - 'error' : 에러 내용 (에러가 발생한 경우)
-    + <web></web> 서버 mime 지원 여부에 따라 다운로드창 또는 실행창이 열릴 수 있습니다.
+    + <web>서버 mime 지원 여부에 따라 다운로드창 또는 실행창이 열릴 수 있습니다.</web>
 
 - ##### jj.native.zipDownload(config, callback) <notweb></notweb>
 지정된 파일들을 zip 파일로 묶어 다운로드 합니다.
