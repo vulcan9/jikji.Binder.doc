@@ -177,9 +177,10 @@ section{
 @media print, screen and (max-width: 720px),
 @media print, screen and (max-width: 1060px){
 	section {
-		/*max-width: 100%!important;*/
+		/*max-width: 100%!important;
 		max-width: -webkit-fill-available;
-		max-width: fill-available;
+		max-width: fill-available;*/
+		min-width: 50px;
 	}
 	#banner, nav{
 		display: block;
