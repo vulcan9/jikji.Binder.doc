@@ -23,6 +23,12 @@ body [layout-raw] {
     display: flex;
     flex-direction: row;
 }
+body [layout-column] {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+}
 body [flex] {
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -97,13 +103,45 @@ code{
 }
 
 /*---------------------------------*/
+#container, #container div, .wrapper{
+	border: 1px solid red
+}
 
+#container {
+	height: 100%;
+    width: 100%;
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+}
 
+#container [top]{
+    min-height: 50px;
+    min-width: 50px;
+}
+
+#container [middle]{
+    min-height: 50px;
+    min-width: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#container [left]{
+    min-height: 50px;
+    min-width: 50px;
+}
+#container [right]{
+    min-height: 50px;
+    min-width: 50px;
+}
+
+/*---------------------------------*/
 header, #banner{
     position: relative; 
 	width: auto;
-	/*display: none;*/
-	min-width: 800px;
+	/*display: none;
+	min-width: 800px;*/
 }
 header{
     padding: 10px;

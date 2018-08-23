@@ -22,6 +22,8 @@
   </head>
   <body>
 
+<div id="container" layout-raw>
+	<div top layout-column>
 
       <header>
         <h1><a href="/jik-ji-Binder/" style="color: white;">{{ site.title | default: site.github.repository_name }}</a></h1>
@@ -47,12 +49,24 @@
 		-->
       </div>
 
-    <div class="wrapper" layout-raw>
+	</div>
+
+
+
+
+
+
+	<div middle flex>
+		<div left>
 
 	  <nav>
         <ul></ul>
         <div id="commonMenu"></div>	  
       </nav>
+
+		</div>
+
+		<div right flex layout-raw>
 
       <section flex>
 		<div class="markdown-body" flex>
@@ -60,7 +74,11 @@
 		</div>
       </section>
       <footer></footer>
-    </div>
+
+		</div>
+	</div>
+</div>
+
 
     {% if site.google_analytics %}
       <script>
