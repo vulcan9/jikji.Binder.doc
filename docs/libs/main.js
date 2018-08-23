@@ -25,7 +25,7 @@ function link(page, target){
 
 // 한글 메뉴는 적용되지 않으므로 도적으로 생성해 준다.
 // id="commonMenu"
-(function(){
+$( document ).ready(function() {
 	var menu = [
 		{type: 'link', target: '', label: 'Home', url: '/'},
 		{label: 'API'},
@@ -59,7 +59,8 @@ function link(page, target){
 		}
 		dom.append($(html));
 	}
-})();
+});
+
 /*
 <div style="padding-bottom: 0.3em;border-bottom: 1px solid #eaecef;">
   <div class="tag-h1"><a href="javascript:void(link('/'));">Home</a></div>

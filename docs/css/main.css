@@ -118,6 +118,18 @@ section{
     min-width: 800px;
 	width: 100%;
 }
+
+@media print, screen and (max-width: 480px),
+@media print, screen and (max-width: 720px),
+@media print, screen and (max-width: 1060px){
+	section {
+		max-width: 100%!important;
+	}
+	nav{
+		display: block;
+	}
+}
+
 nav{
     /* position: fixed; */
     width: 240px;
@@ -133,16 +145,15 @@ nav ul{
 	padding: 0;
 }
 
-@media print, screen and (max-width: 480px),
-@media print, screen and (max-width: 720px),
-@media print, screen and (max-width: 1060px){
-	section {
-		max-width: 100%!important;
-	}
-	nav{
-		display: block;
-	}
-}
 nav ul li.tag-h1 a {
+
+}
+
+
+
+.tag-h1 {
     font-size: 1.2em;
+}
+.tag-h3 {
+    font-size: 14px;
 }
