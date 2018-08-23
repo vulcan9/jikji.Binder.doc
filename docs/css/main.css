@@ -144,11 +144,14 @@ nav ul{
 	margin: 20px 0;
 	padding: 0;
 }
-
+nav ul li.tag-h1{
+    font-size: 1.3em;
+}
 .tag-h1 {
     font-size: 1.3em;
     font-weight: bold;
     color: #333;
+    margin: 25px 0 2px 0;
 }
 .tag-h3 {
     font-size: 14px;
@@ -158,7 +161,7 @@ nav ul{
 
 #commonMenu{
 	padding-top: 20px;
-	border-top: 1px solid #666;
+	border-top: 1px solid rgba(0,0,0,0.2);
 }
 #commonMenu a{
 	color: #666;
