@@ -2,8 +2,10 @@
 
 ### Demo
 
-[Html Demo](jj.link.html('/resource/html/index.html', 'demo_window', {}))
-[Flash Demo](jj.link.html('/resource/flash/index.html', 'demo_window', {}))
+<ul>
+<li><a href="javascript:void(link('/resource/html/index.html', 'demo_window'));">Html Demo</a></li>
+<li><a href="javascript:void(link('/resource/flash/index.html', 'demo_window'));">Flash Demo</a></li>
+</ul>
 
 
 ### License
