@@ -3,8 +3,8 @@
 ### Demo
 
 <ul>
-  <li><a href="javascript:void(demo('/resource/html/index.html'));">Html Demo</a></li>
-  <li><a href="javascript:void(demo('/resource/flash/index.html'));">Flash Demo</a></li>
+  <li><a href="javascript:void(demo('/resource/html/index.html'));">Html Demo (Jik-ji Binder 새창)</a></li>
+  <li><a href="javascript:void(demo('/resource/flash/index.html'));">Flash Demo (Jik-ji Binder 새창)</a></li>
 </ul>
 
 
