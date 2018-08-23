@@ -9,7 +9,7 @@
 
 
 <script>
-fuction demo(url){
+fuㅜction demo(url){
   if(parent.jj){
     parent.jj.link.html(url, 'demo_window', {});
   }else{
