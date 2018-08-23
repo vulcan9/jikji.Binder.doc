@@ -146,10 +146,12 @@ nav ul{
 }
 
 .tag-h1 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #333;
 }
 .tag-h3 {
     font-size: 14px;
+    line-height: 16px;
+    padding: 5px 0px;
 }

@@ -28,7 +28,7 @@ function link(page, target){
 $( document ).ready(function() {
 	var menu = [
 		{type: 'link', target: '', label: 'Home', url: '/'},
-		{label: 'API'},
+		{label: 'API Reference'},
 		{type: 'link', target: '', label: 'version 0.5.x', url: 'ver/API.md'},
 		{type: 'link', target: '', label: 'version 0.4.x', url: 'ver/API.0.4.md'},
 		{type: 'link', target: '', label: 'version 0.3.x', url: 'ver/API.0.3.md'},
