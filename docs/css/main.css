@@ -103,40 +103,43 @@ code{
 }
 
 /*---------------------------------*/
+
+/*
 #container, #container div, .wrapper{
 	border: 1px solid red
 }
-
+*/
+#container,  *{
+	box-sizing: border-box;
+}
 #container {
-	height: 100%;
-    width: 100%;
     z-index: 100000;
     display: flex;
     flex-direction: column;
 }
 
 #container [top]{
-    min-height: 50px;
-    min-width: 50px;
+    /*min-height: 50px;
+    min-width: 50px;*/
 }
-
 #container [middle]{
-    min-height: 50px;
-    min-width: 50px;
+    /*min-height: 50px;
+    min-width: 50px;*/
     display: flex;
     flex-direction: row;
 }
 
 #container [left]{
-    min-height: 50px;
-    min-width: 50px;
+    /*min-height: 50px;
+    min-width: 50px;*/
 }
 #container [right]{
-    min-height: 50px;
-    min-width: 50px;
+    /*min-height: 50px;
+    min-width: 50px;*/
 }
 
 /*---------------------------------*/
+
 header, #banner{
     position: relative; 
 	width: auto;
@@ -163,10 +166,12 @@ section{
     margin: 20px;
     width: 100%!important;
 }
+/*
 .wrapper{
     min-width: 800px;
 	width: 100%;
 }
+*/
 
 @media print, screen and (max-width: 480px),
 @media print, screen and (max-width: 720px),
