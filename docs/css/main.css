@@ -44,10 +44,14 @@ body [flex] {
 	text-shadow: none;
 }
 code{
+    margin: 5px;
 	text-shadow: none;
-	color: inherit;
+	color: black;
+    background-color: rgba(96,125,139,0.3);
 }
-
+.markdown-body code, .markdown-body tt{
+padding: 3px 5px;
+}
 
 .markdown-body .hljs-comment, .markdown-body .hljs-quote {
     color: rgba(189, 189, 189, 0.4);
