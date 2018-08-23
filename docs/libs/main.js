@@ -52,7 +52,6 @@ $( document ).ready(function() {
 		{type: 'link', target: '', label: '분권, 통권 구분하여 링크 걸기', url: 'guide/guideBookbinding.md'},
 		{type: 'link', target: '_blank', label: '새로운 APP ID 지정하기', url: 'https://github.com/vulcan9/jik-ji-Binder/wiki/Jik ji Binder 새로운 APP ID 지정하기 (xxx_cdbook_cd_appid 버전)'},
 		{label: 'Release Note'},
-		{type: 'link', target: '', label: 'version 0.5', url: 'ver/release_0.5.md'},
 		{type: 'link', target: '', label: 'version 0.4', url: 'ver/release_0.4.md'},
 		{type: 'link', target: '', label: 'version 0.3', url: 'ver/release_0.3.md'},
 		{type: 'link', target: '', label: 'version 0.2', url: 'ver/release_0.2.md'},
