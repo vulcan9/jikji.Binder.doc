@@ -164,7 +164,7 @@ header{
 }
 section{
     margin: 20px;
-    width: 100%!important;
+    width: auto;
 }
 /*
 .wrapper{
@@ -177,7 +177,7 @@ section{
 @media print, screen and (max-width: 720px),
 @media print, screen and (max-width: 1060px){
 	section {
-		max-width: 100%!important;
+		/*max-width: 100%!important;*/
 	}
 	#banner, nav{
 		display: block;
