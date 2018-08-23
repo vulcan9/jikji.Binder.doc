@@ -178,7 +178,8 @@ section{
 @media print, screen and (max-width: 1060px){
 	section {
 		/*max-width: 100%!important;*/
-		max-width: initial;
+		max-width: -webkit-fill-available;
+		max-width: fill-available;
 	}
 	#banner, nav{
 		display: block;
