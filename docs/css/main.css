@@ -112,11 +112,12 @@ header{
 	margin-right: initial;
 	padding-right: initial;
     top: 0;
+    padding-left: 20px;
 }
 #banner .fork {
     position: relative;
     left: 0;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 section{
     margin: 20px;
