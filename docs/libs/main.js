@@ -44,7 +44,7 @@ $( document ).ready(function() {
 		{type: 'link', target: '', label: 'Flash에서 API 사용하기', url: 'guide/guideFlash.md'},
 		{type: 'link', target: '', label: '녹음 기능 참고사항', url: 'guide/guideRecord.md'},
 		{type: 'link', target: '', label: '분권, 통권 구분하여 링크 걸기', url: 'guide/guideBookbinding.md'},
-		{type: 'link', target: '_blank', label: '새로운 APP ID 지정하기', url: 'https://github.com/vulcan9/jik-ji-Binder/wiki/Jik-ji-Binder-%EC%83%88%EB%A1%9C%EC%9A%B4-APP-ID-%EC%A7%80%EC%A0%95%ED%95%98%EA%B8%B0-(xxx_cdbook_cd_appid-%EB%B2%84%EC%A0%84)'},
+		{type: 'link', target: '_blank', label: '새로운 APP ID 지정하기', url: 'https://github.com/vulcan9/jik-ji-Binder/wiki/Jik ji Binder 새로운 APP ID 지정하기 (xxx_cdbook_cd_appid 버전)'},
 		{label: 'Release Note'},
 		{type: 'link', target: '', label: 'version 0.4', url: 'ver/release_0.4.md'},
 		{type: 'link', target: '', label: 'version 0.3', url: 'ver/release_0.3.md'},
