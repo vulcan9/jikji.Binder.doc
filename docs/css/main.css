@@ -44,13 +44,13 @@ body [flex] {
 	text-shadow: none;
 }
 code{
-    margin: 5px;
 	text-shadow: none;
 	color: black;
-    background-color: rgba(96,125,139,0.3);
 }
 .markdown-body code, .markdown-body tt{
-padding: 3px 5px;
+	padding: 3px 5px;
+    background-color: rgba(96,125,139,0.15);
+    margin: 5px;
 }
 
 .markdown-body .hljs-comment, .markdown-body .hljs-quote {
