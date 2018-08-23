@@ -140,8 +140,9 @@ nav{
 	position: relative;
     top: 0;
     left: initial;
-	margin: 20px 0;
+	margin: 20px 0 20px 20px;
     text-align: right;
+
 }
 nav ul{
     width: 240px;
