@@ -29,6 +29,7 @@ body {
 	padding: 10px;
 	*/
     /*border: 1px solid red;*/
+	font-family: 'NotoKrR'!important;
 }
 body [layout-raw] {
     display: -webkit-flex;

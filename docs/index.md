@@ -10,7 +10,7 @@
 
 <script>
 function demo(url){
-  if(parent.jj){
+  if(parent!==window && parent.jj){
     parent.jj.link.html(url, 'demo_window', {});
   }else{
     alert('jik-ji-Binder에서 실행해야 합니다.');
