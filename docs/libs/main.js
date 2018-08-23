@@ -13,13 +13,19 @@
 })(window.jj);
 
 function link(page, target){
-	if(page.search(/(\.\/|http:|https:)/) < 0){
+	var isURL = (page.search(/(\.\/|http:|https:)/) > -1);
+	if(!isURL){
 		page = '/jik-ji-Binder/' + page.replace(/\.md$/, '');
 	}
 	if(!target || target === '_self'){
 		window.location.href = page;
 	}else{
-		window.open(page, target);
+		if(isURL && window.nw && window.nw.Shell){
+			// 기본 브라우져로 열기
+			window.nw.Shell.openExternal(page);
+		}else{
+			window.open(page, target);
+		}
 	}
 }
 

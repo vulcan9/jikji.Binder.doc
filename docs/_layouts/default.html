@@ -30,9 +30,10 @@
 
       <div id="banner">
         
-		<a href="{{ site.github.repository_url }}" target="_blank"><span id="logo"></span></a>
         <a href="/jik-ji-Binder/" class="button fork"><strong>Home</strong></a>
-        {% if site.show_downloads %}
+		<a href="javascript:void(link('{{ site.github.repository_url }}', '_blank'));"><span id="logo"></span></a>
+        <!--
+		{% if site.show_downloads %}
           <div class="downloads">
             <span>Downloads:</span>
             <ul>
@@ -41,6 +42,7 @@
             </ul>
           </div>
         {% endif %}
+		-->
       </div>
 
     <div class="wrapper" layout-raw>
