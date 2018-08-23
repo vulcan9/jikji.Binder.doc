@@ -1,9 +1,10 @@
 # jik-ji-Binder
-jik-ji Binder 프로젝트 이슈, 프로젝트 관리
 
-### Documents
+### Demo
 
-[API Documents](https://vulcan9.github.io/jik-ji-Binder/)
+[Html Demo](jj.link.html('/resource/html/index.html', 'demo_window', {}))
+[Flash Demo](jj.link.html('/resource/flash/index.html', 'demo_window', {}))
+
 
 ### License
 
