@@ -9,7 +9,7 @@
 
 
 <script>
-fuㅜction demo(url){
+function demo(url){
   if(parent.jj){
     parent.jj.link.html(url, 'demo_window', {});
   }else{
