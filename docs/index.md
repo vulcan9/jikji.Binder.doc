@@ -3,9 +3,20 @@
 ### Demo
 
 <ul>
-<li><a href="javascript:void(link('/resource/html/index.html', 'demo_window'));">Html Demo</a></li>
-<li><a href="javascript:void(link('/resource/flash/index.html', 'demo_window'));">Flash Demo</a></li>
+  <li><a href="javascript:void(demo('/resource/html/index.html'));">Html Demo</a></li>
+  <li><a href="javascript:void(demo('/resource/flash/index.html'));">Flash Demo</a></li>
 </ul>
+
+
+<script>
+fuction demo(url){
+  if(parent.jj){
+    parent.jj.link.html(url, 'demo_window', {});
+  }else{
+    alert('jik-ji-Binder에서 실행해야 합니다.');
+  }
+}
+</script>
 
 
 ### License
