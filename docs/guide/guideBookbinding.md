@@ -13,7 +13,8 @@ jj.link.ebook('/resource/ebook/epub/', '_blank', {page:3});
 ```
 
 위 경로인 경우 폴더 구조는 다음과 같습니다.
-![Alt text](./img/link_ebook1.jpg)
+
+![](../img/link_ebook1.jpg)
 
 -------------------------------------------------------------
 
@@ -32,5 +33,6 @@ jj.link.ebook('/resource/ebook/', '_blank', {page:3, bookBinding:true});
 ```
 
 위 경로인 경우 폴더 구조는 다음과 같습니다.
-![Alt text](./img/link_ebook2.jpg)
+
+![Alt text](../img/link_ebook2.jpg)
 
