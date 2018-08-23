@@ -59,8 +59,8 @@ $( document ).ready(function() {
 		{type: 'link', target: '', label: 'version 0.2', url: 'ver/migration_0.2.md'},
 		{type: 'link', target: '', label: 'version 0.1', url: 'ver/migration_0.1.md'},
 		{label: 'Release Note'},
-		{type: 'link', target: '', label: 'Native 버전', url: 'ver/history.md'},
-		{type: 'link', target: '', label: 'Web 버전', url: 'ver/history_web.md'}
+		{type: 'link', target: '', label: 'Native Version', url: 'ver/history.md'},
+		{type: 'link', target: '', label: 'Web Version', url: 'ver/history_web.md'}
 	];
 	var dom = $('#commonMenu');
 	for(var i=0; i<menu.length; ++i){
