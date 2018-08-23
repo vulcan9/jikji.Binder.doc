@@ -155,3 +155,11 @@ nav ul{
     line-height: 16px;
     padding: 5px 0px;
 }
+
+#commonMenu{
+	padding-top: 20px;
+	border-top: 1px solid #666;
+}
+#commonMenu a{
+	color: #666;
+}
