@@ -5,8 +5,6 @@ jik-ji Binder 프로젝트 이슈, 프로젝트 관리
 
 [API Documents](https://vulcan9.github.io/jik-ji-Binder/)
 
-[Wiki](https://github.com/vulcan9/jik-ji-Binder/wiki)
-
 ### License
 
 Jik-ji Binder에 사용된 NW.JS 는 MIT 라이센스를 따릅니다.<br>
