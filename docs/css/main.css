@@ -181,6 +181,7 @@ section{
 		max-width: -webkit-fill-available;
 		max-width: fill-available;*/
 		min-width: 50px;
+		max-width: initial;
 	}
 	#banner, nav{
 		display: block;
