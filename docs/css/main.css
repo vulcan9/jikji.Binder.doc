@@ -137,7 +137,7 @@ code{
 /*---------------------------------*/
 
 #container, #container div, .wrapper{
-	border: 1px solid red
+	/*border: 1px solid red;*/
 }
 
 header, #banner{
@@ -178,8 +178,7 @@ section{
 @media print, screen and (max-width: 1060px){
 	section {
 		/*max-width: 100%!important;
-		max-width: -webkit-fill-available;
-		max-width: fill-available;*/
+		max-width: -webkit-fill-available;*/
 		min-width: 50px;
 		max-width: initial;
 	}
