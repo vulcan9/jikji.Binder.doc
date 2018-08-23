@@ -27,7 +27,7 @@ function link(page, target){
 // id="commonMenu"
 $( document ).ready(function() {
 	var menu = [
-		{type: 'link', target: '', label: 'Home', url: '/'},
+		//{type: 'link', target: '', label: 'Home', url: '/'},
 		{label: 'API Reference'},
 		{type: 'link', target: '', label: 'version 0.5.x', url: 'ver/API.md'},
 		{type: 'link', target: '', label: 'version 0.4.x', url: 'ver/API.0.4.md'},
