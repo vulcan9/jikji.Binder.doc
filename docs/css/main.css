@@ -118,24 +118,20 @@ code{
     flex-direction: column;
 }
 
-#container [top]{
-    /*min-height: 50px;
-    min-width: 50px;*/
+#container [top],
+#container [middle],
+#container [left],
+#container [right]{
+    min-height: 50px;
+    min-width: 50px;
 }
 #container [middle]{
-    /*min-height: 50px;
-    min-width: 50px;*/
     display: flex;
     flex-direction: row;
 }
-
 #container [left]{
-    /*min-height: 50px;
-    min-width: 50px;*/
 }
 #container [right]{
-    /*min-height: 50px;
-    min-width: 50px;*/
 }
 
 /*---------------------------------*/
