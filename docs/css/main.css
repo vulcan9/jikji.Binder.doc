@@ -104,12 +104,12 @@ code{
 
 /*---------------------------------*/
 
-/*
+
 #container, #container div, .wrapper{
 	border: 1px solid red
 }
-*/
-#container,  *{
+
+#container, #container *{
 	box-sizing: border-box;
 }
 #container {
@@ -139,6 +139,10 @@ code{
 }
 
 /*---------------------------------*/
+
+#container, #container div, .wrapper{
+	border: 1px solid red
+}
 
 header, #banner{
     position: relative; 
