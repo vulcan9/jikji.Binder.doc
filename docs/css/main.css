@@ -97,7 +97,11 @@ code{
 
 header, #banner{
     position: relative; width: auto;
-	display: none;
+	/*display: none;*/
+}
+header{
+    padding: 10px;
+	min-height: initial;
 }
 #banner{
     left: initial; right: initial;
