@@ -136,10 +136,6 @@ code{
 
 /*---------------------------------*/
 
-#container, #container div, .wrapper{
-	/*border: 1px solid red;*/
-}
-
 header, #banner{
     position: relative; 
 	width: auto;

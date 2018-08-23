@@ -1,4 +1,4 @@
-> Flash에서 API 사용하기
+# Flash에서 API 사용하기
 
 + [SWF 파일 링크걸기](#SWF 파일 링크걸기)
 + [SWF를 HTML 문서에 삽입하기](#SWF를 HTML 문서에 삽입하기)
