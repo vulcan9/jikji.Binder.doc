@@ -145,14 +145,10 @@ nav ul{
 	padding: 0;
 }
 
-nav ul li.tag-h1 a {
-
-}
-
-
-
 .tag-h1 {
     font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
 }
 .tag-h3 {
     font-size: 14px;

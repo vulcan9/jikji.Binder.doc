@@ -1,5 +1,5 @@
 
-// legacy ¹®¼­ Áö¿øÇÏ±â À§ÇÑ ÄÚµå
+// legacy ë¬¸ì„œ ì§€ì›í•˜ê¸° ìœ„í•œ ì½”ë“œ
 (function(jj){
 	if(jj) return;
 	window.jj = {
@@ -23,29 +23,29 @@ function link(page, target){
 	}
 }
 
-// ÇÑ±Û ¸Ş´º´Â Àû¿ëµÇÁö ¾ÊÀ¸¹Ç·Î µµÀûÀ¸·Î »ı¼ºÇØ ÁØ´Ù.
+// í•œê¸€ ë©”ë‰´ëŠ” ì ìš©ë˜ì§€ ì•Šìœ¼ë¯€ë¡œ ë„ì ìœ¼ë¡œ ìƒì„±í•´ ì¤€ë‹¤.
 // id="commonMenu"
 $( document ).ready(function() {
 	var menu = [
 		{type: 'link', target: '', label: 'Home', url: '/'},
 		{label: 'API'},
-		{type: 'link', target: '', label: 'API Reference 0.5.x', url: 'ver/API.md'},
-		{type: 'link', target: '', label: 'API Reference 0.4.x', url: 'ver/API.0.4.md'},
-		{type: 'link', target: '', label: 'API Reference 0.3.x', url: 'ver/API.0.3.md'},
-		{type: 'link', target: '', label: 'API Reference 0.2.x', url: 'ver/API.0.2.md'},
+		{type: 'link', target: '', label: 'version 0.5.x', url: 'ver/API.md'},
+		{type: 'link', target: '', label: 'version 0.4.x', url: 'ver/API.0.4.md'},
+		{type: 'link', target: '', label: 'version 0.3.x', url: 'ver/API.0.3.md'},
+		{type: 'link', target: '', label: 'version 0.2.x', url: 'ver/API.0.2.md'},
 		{label: 'Guide'},
-		{type: 'link', target: '', label: 'Html¿¡¼­ API »ç¿ëÇÏ±â', url: 'guide/guideHtml.md'},
-		{type: 'link', target: '', label: 'Flash¿¡¼­ API »ç¿ëÇÏ±â', url: 'guide/guideFlash.md'},
-		{type: 'link', target: '', label: '³ìÀ½ ±â´É Âü°í»çÇ×', url: 'guide/guideRecord.md'},
-		{type: 'link', target: '', label: 'ºĞ±Ç, Åë±Ç ±¸ºĞÇÏ¿© ¸µÅ© °É±â', url: 'guide/guideBookbinding.md'},
-		{type: 'link', target: '_blank', label: '»õ·Î¿î APP ID ÁöÁ¤ÇÏ±â', url: 'https://github.com/vulcan9/jik-ji-Binder/wiki/Jik-ji-Binder-%EC%83%88%EB%A1%9C%EC%9A%B4-APP-ID-%EC%A7%80%EC%A0%95%ED%95%98%EA%B8%B0'},
-		{label: 'Release'},
-		{type: 'link', target: '', label: 'Release Note (ver 0.4)', url: 'ver/release_0.4.md'},
-		{type: 'link', target: '', label: 'Release Note (ver 0.3)', url: 'ver/release_0.3.md'},
-		{type: 'link', target: '', label: 'Release Note (ver 0.2)', url: 'ver/release_0.2.md'},
+		{type: 'link', target: '', label: 'Htmlì—ì„œ API ì‚¬ìš©í•˜ê¸°', url: 'guide/guideHtml.md'},
+		{type: 'link', target: '', label: 'Flashì—ì„œ API ì‚¬ìš©í•˜ê¸°', url: 'guide/guideFlash.md'},
+		{type: 'link', target: '', label: 'ë…¹ìŒ ê¸°ëŠ¥ ì°¸ê³ ì‚¬í•­', url: 'guide/guideRecord.md'},
+		{type: 'link', target: '', label: 'ë¶„ê¶Œ, í†µê¶Œ êµ¬ë¶„í•˜ì—¬ ë§í¬ ê±¸ê¸°', url: 'guide/guideBookbinding.md'},
+		{type: 'link', target: '_blank', label: 'ìƒˆë¡œìš´ APP ID ì§€ì •í•˜ê¸°', url: 'https://github.com/vulcan9/jik-ji-Binder/wiki/Jik-ji-Binder-%EC%83%88%EB%A1%9C%EC%9A%B4-APP-ID-%EC%A7%80%EC%A0%95%ED%95%98%EA%B8%B0'},
+		{label: 'Release Note'},
+		{type: 'link', target: '', label: 'version 0.4', url: 'ver/release_0.4.md'},
+		{type: 'link', target: '', label: 'version 0.3', url: 'ver/release_0.3.md'},
+		{type: 'link', target: '', label: 'version 0.2', url: 'ver/release_0.2.md'},
 		{label: 'Migration'},
-		{type: 'link', target: '', label: 'Migration (ver 0.2)', url: 'ver/migration_0.2.md'},
-		{type: 'link', target: '', label: 'Migration (ver 0.1)', url: 'ver/migration_0.1.md'}
+		{type: 'link', target: '', label: 'version 0.2', url: 'ver/migration_0.2.md'},
+		{type: 'link', target: '', label: 'version 0.1', url: 'ver/migration_0.1.md'}
 	];
 	var dom = $('#commonMenu');
 	for(var i=0; i<menu.length; ++i){
@@ -70,11 +70,11 @@ $( document ).ready(function() {
   <div class="tag-h3"><a href="javascript:void(link('ver/API.0.3.md'));">API Reference 0.3.x</a></div>
   <div class="tag-h3"><a href="javascript:void(link('ver/API.02.md'));">API Reference 0.2.x</a></div>
   <div class="tag-h1">Guide</div>
-  <div class="tag-h3"><a href="javascript:void(link('guide/guideHtml.md'));">Html¿¡¼­ API »ç¿ëÇÏ±â</a></div>
-  <div class="tag-h3"><a href="javascript:void(link('guide/guideFlash.md'));">Flash¿¡¼­ API »ç¿ëÇÏ±â</a></div>
-  <div class="tag-h3"><a href="javascript:void(link('guide/guideRecord.md'));">³ìÀ½ ±â´É Âü°í»çÇ×</a></div>
-  <div class="tag-h3"><a href="javascript:void(link('guide/guideBookbinding.md'));">ºĞ±Ç, Åë±Ç ±¸ºĞÇÏ¿© ¸µÅ© °É±â</a></div>
-  <div class="tag-h3"><a href="javascript:void(link('https://github.com/vulcan9/jik-ji-Binder/wiki/Jik-ji-Binder-%EC%83%88%EB%A1%9C%EC%9A%B4-APP-ID-%EC%A7%80%EC%A0%95%ED%95%98%EA%B8%B0'));">»õ·Î¿î APP ID ÁöÁ¤ÇÏ±â</a></div>
+  <div class="tag-h3"><a href="javascript:void(link('guide/guideHtml.md'));">Htmlì—ì„œ API ì‚¬ìš©í•˜ê¸°</a></div>
+  <div class="tag-h3"><a href="javascript:void(link('guide/guideFlash.md'));">Flashì—ì„œ API ì‚¬ìš©í•˜ê¸°</a></div>
+  <div class="tag-h3"><a href="javascript:void(link('guide/guideRecord.md'));">ë…¹ìŒ ê¸°ëŠ¥ ì°¸ê³ ì‚¬í•­</a></div>
+  <div class="tag-h3"><a href="javascript:void(link('guide/guideBookbinding.md'));">ë¶„ê¶Œ, í†µê¶Œ êµ¬ë¶„í•˜ì—¬ ë§í¬ ê±¸ê¸°</a></div>
+  <div class="tag-h3"><a href="javascript:void(link('https://github.com/vulcan9/jik-ji-Binder/wiki/Jik-ji-Binder-%EC%83%88%EB%A1%9C%EC%9A%B4-APP-ID-%EC%A7%80%EC%A0%95%ED%95%98%EA%B8%B0'));">ìƒˆë¡œìš´ APP ID ì§€ì •í•˜ê¸°</a></div>
   <div class="tag-h1">Release</div>
   <div class="tag-h3"><a href="javascript:void(link('ver/release_0.4.md'));">Release Note (ver 0.4)</a></div>
   <div class="tag-h3"><a href="javascript:void(link('ver/release_0.3.md'));">Release Note (ver 0.3)</a></div>
