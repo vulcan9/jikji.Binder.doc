@@ -1,6 +1,7 @@
 ﻿
 #### ver 0.5.3
 ------------------------------
+##### 배포 : 2018.08.27
 
 * Jik-ji Editor HTML Element 랜더링 지원
 * Ebook viewer 교체
