@@ -4,6 +4,7 @@
 
 * Jik-ji Editor HTML Element 랜더링 지원
 * Ebook viewer 교체
+  - WebviewerK_jikji_20180807a_배포.zip
 
 #### ver 0.5.1
 ------------------------------
