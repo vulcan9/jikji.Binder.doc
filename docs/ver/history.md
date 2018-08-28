@@ -13,6 +13,7 @@
 * window resizeTo 창 크기 연산 로직 변경
 * naver 페이지에서 net::ERR_BLOCKED_BY_CLIENT 에러 발생
 * 잘못된 페이지(404 Not Found) 열릴때 창닫히지 않는 문제 해결
+* Binder doc 온라인으로 이동
 
 #### ver 0.5.1
 ------------------------------
