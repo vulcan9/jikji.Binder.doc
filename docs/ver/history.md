@@ -7,8 +7,8 @@
 * Ebook viewer 교체
   - WebviewerK_jikji_20180807a_배포.zip
 * nwJS 버전 업데이트 (ver 0.32.4)
- - 크롬에서 기본 video, audio UI 변경됨
- - New in Chrome 68 (https://developers.google.com/web/updates/2018/07/nic68)
+  - 크롬에서 기본 video, audio UI 변경됨
+  - [New in Chrome 68](https://developers.google.com/web/updates/2018/07/nic68)
 
 * window resizeTo 창 크기 연산 로직 변경
 * naver 페이지에서 net::ERR_BLOCKED_BY_CLIENT 에러 발생
