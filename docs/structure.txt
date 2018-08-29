@@ -1,24 +1,24 @@
-https://jekyllrb.com/docs/structure/
+ï»¿https://jekyllrb.com/docs/structure/
 
 .
-¦§¦¡¦¡ _config.yml
-¦§¦¡¦¡ _data
-|   ¦¦¦¡¦¡ members.yml
-¦§¦¡¦¡ _drafts
-|   ¦§¦¡¦¡ begin-with-the-crazy-ideas.md
-|   ¦¦¦¡¦¡ on-simplicity-in-technology.md
-¦§¦¡¦¡ _includes
-|   ¦§¦¡¦¡ footer.html
-|   ¦¦¦¡¦¡ header.html
-¦§¦¡¦¡ _layouts
-|   ¦§¦¡¦¡ default.html
-|   ¦¦¦¡¦¡ post.html
-¦§¦¡¦¡ _posts
-|   ¦§¦¡¦¡ 2007-10-29-why-every-programmer-should-play-nethack.md
-|   ¦¦¦¡¦¡ 2009-04-26-barcamp-boston-4-roundup.md
-¦§¦¡¦¡ _sass
-|   ¦§¦¡¦¡ _base.scss
-|   ¦¦¦¡¦¡ _layout.scss
-¦§¦¡¦¡ _site
-¦§¦¡¦¡ .jekyll-metadata
-¦¦¦¡¦¡ index.html # can also be an 'index.md' with valid YAML Frontmatter
+â”œâ”€â”€ _config.yml
+â”œâ”€â”€ _data
+|   â””â”€â”€ members.yml
+â”œâ”€â”€ _drafts
+|   â”œâ”€â”€ begin-with-the-crazy-ideas.md
+|   â””â”€â”€ on-simplicity-in-technology.md
+â”œâ”€â”€ _includes
+|   â”œâ”€â”€ footer.html
+|   â””â”€â”€ header.html
+â”œâ”€â”€ _layouts
+|   â”œâ”€â”€ default.html
+|   â””â”€â”€ post.html
+â”œâ”€â”€ _posts
+|   â”œâ”€â”€ 2007-10-29-why-every-programmer-should-play-nethack.md
+|   â””â”€â”€ 2009-04-26-barcamp-boston-4-roundup.md
+â”œâ”€â”€ _sass
+|   â”œâ”€â”€ _base.scss
+|   â””â”€â”€ _layout.scss
+â”œâ”€â”€ _site
+â”œâ”€â”€ .jekyll-metadata
+â””â”€â”€ index.html # can also be an 'index.md' with valid YAML Frontmatter
