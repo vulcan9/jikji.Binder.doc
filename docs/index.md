@@ -25,6 +25,7 @@ function demo(url){
 1. 배포된 파일을 기준으로 `app/resource` 폴더를 찾습니다.
 2. `app/resource` 폴더 내용물중 `config.json` 파일을 제외한 모든 파일을 삭제합니다.
 3. `app/resource/index.html`을 만들고 다음 내용을 작성합니다.
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -46,10 +47,13 @@ function demo(url){
 </body>
 </html>
 ``` 
+
 4. `config.json` 파일에서 main 속성값을 다음과 같이 수정합니다.
+
 ```
     "main": "./index.html",
 ```
+
 5. 이제 `app/resource` 폴더에서 원하는 application을 구성할 수 있습니다.
 6. `launcher.exe` 를 실행합니다.
 
