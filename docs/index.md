@@ -51,7 +51,7 @@ function demo(url){
         "main": "./index.html",
     ```
 
-5. `app/resource` 폴더의 `index.html` 페이지로부터 시작해서 원하는 application을 구성합니다.
+5. `app/resource` 폴더의 `index.html` 페이지로부터 원하는 application을 구성합니다.
 6. `launcher.exe` 를 실행합니다.
 
 ### License
