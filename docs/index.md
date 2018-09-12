@@ -51,8 +51,8 @@ function demo(url){
 ```
     "main": "./index.html",
 ```
-5. `launcher.exe` 를 실행합니다.
-6. 이제 `app/resource` 폴더에서 원하는 application을 구성할 수 있습니다.
+5. 이제 `app/resource` 폴더에서 원하는 application을 구성할 수 있습니다.
+6. `launcher.exe` 를 실행합니다.
 
 ### License
 
