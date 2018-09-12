@@ -25,7 +25,6 @@ function demo(url){
 1. 배포된 파일을 기준으로 `app/resource` 폴더를 찾습니다.
 2. `app/resource` 폴더 내용물중 `config.json` 파일을 제외한 모든 파일을 삭제합니다.
 3. `app/resource/index.html`을 만들고 다음 내용을 작성합니다.
-
 ```html
 <!DOCTYPE html>
 <html>
