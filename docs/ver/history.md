@@ -1,4 +1,10 @@
-﻿#### ver 0.5.9
+﻿#### ver 0.5.10
+------------------------------
+
+* viewer 경로 지정 가능하도록 linker api에 옵션 추가.
+* sourcemap 파일 없애고 inline으로 기록함.
+
+#### ver 0.5.9
 ------------------------------
 ##### 배포 : 2018.11.16
 
@@ -20,9 +26,6 @@
 ------------------------------
 ##### 배포 : 2018.08.28
 
-* Jik-ji Editor HTML Element 랜더링 지원
-* Ebook viewer 교체
-  - WebviewerK_jikji_20180807a_배포.zip
 * nwJS 버전 업데이트 (ver 0.32.4)
   - 크롬에서 기본 video, audio UI 변경됨
   - [New in Chrome 68](https://developers.google.com/web/updates/2018/07/nic68)
@@ -31,6 +34,13 @@
 * naver 페이지에서 net::ERR_BLOCKED_BY_CLIENT 에러 발생
 * 잘못된 페이지(404 Not Found) 열릴때 창닫히지 않는 문제 해결
 * Binder doc 온라인으로 이동
+
+#### ver 0.5.2
+------------------------------
+
+* Jik-ji Editor HTML Element 랜더링 지원
+* Ebook viewer 교체
+  - WebviewerK_jikji_20180807a_배포.zip
 
 #### ver 0.5.1
 ------------------------------
