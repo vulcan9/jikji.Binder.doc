@@ -521,8 +521,8 @@ jj.native.zip({
     + Binder 구조 내에서 manifest.json 파일에 지정된 `app` 폴더의 하위폴더(`user` 폴더)가 논리적인 root 가 됩니다.
     + `/sample/file.json` 으로 `pathString` 경로를 지정 하였다면 실제 경로는 다음과 같습니다.
     ```
-     manifest.json 에 "app-folder": "app" 으로 지정되어 있다면 (default값 : app),
-     * 파일 실제 경로 : app/user/sample/file.json
+    manifest.json 에 "app-folder": "app" 으로 지정되어 있다면 (default값 : app),
+    파일 실제 경로 : app/user/sample/file.json
     ```
     + 상대경로로 지정할 수 없습니다.
     ```
