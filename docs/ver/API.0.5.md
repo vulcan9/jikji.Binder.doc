@@ -519,11 +519,12 @@ jj.native.zip({
 - 경로를 지정할때 공통적으로 다음 제약을 받습니다.
 
     + Binder 구조 내에서 manifest.json 파일에 지정된 `app` 폴더의 하위폴더(`user` 폴더)가 논리적인 root 가 됩니다.
-    + `/sample/file.json` 으로 `pathString` 경로를 지정 하였다면 실제 경로는 다음과 같습니다.
+    + `/sample/file.json` 으로 `pathString` 경로를 지정 하였다면 실제 경로는 다음과 같습니다.  
     ```
     manifest.json 에 "app-folder": "app" 으로 지정되어 있다면 (default값 : app),
     파일 실제 경로 : app/user/sample/file.json
     ```
+    
     + 상대경로로 지정할 수 없습니다.
     ```
     (x) './folder/file.txt', '../folder/file.txt'
@@ -531,6 +532,7 @@ jj.native.zip({
     (o) '/folder/file.txt'
     (o) 'user://folder/file.txt'
     ```
+    
 - **경로 표기 방법**
 `user` 폴더 이하의 리소스에 접근 하고자 할때 경로 표기는 다음과 같이 합니다.
     + `user` 폴더명은 생략하고 표기 합니다.
