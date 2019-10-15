@@ -523,7 +523,7 @@ jj.native.zip({
      ```
      manifest.json 에 "app-folder": "app" 으로 지정되어 있다면 (default값 : app),
      * 파일 실제 경로 : app/user/sample/file.json
-     ```
+    ```
     + 상대경로로 지정할 수 없습니다.
     ```
     (x) './folder/file.txt', '../folder/file.txt'
