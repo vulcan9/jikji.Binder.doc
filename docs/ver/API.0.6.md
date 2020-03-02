@@ -335,6 +335,7 @@ jj.link.flash('./content01/game.swf', '_blank', option, viewerPath);
     + onClose(data, win) : (Function) 새창이 닫힐때 콜백 함수를 전달합니다.
 - viewerPath [String] (생략 가능)
     + 별도의 뷰어에서 링크를 열고자 하는 경우 뷰어(html)의 경로를 지정합니다.
+    
     ```
     // 뷰어 경로 지정 방법
     
