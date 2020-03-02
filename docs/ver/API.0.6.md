@@ -20,12 +20,12 @@
         + jj.newSWF (interfaceFunctionName) : Loader 객체
 + [window.jj.link 객체](#window.jj.link 객체)
     + jj.link.html (url, target, option)
-    + jj.link.ebook (url, target, option)
-    + jj.link.image (url, target, option)
-    + jj.link.pdf (url, target, option)
-    + jj.link.audio (url, target, option)
-    + jj.link.video (url, target, option)
-    + jj.link.flash (url, target, option)
+    + jj.link.ebook (url, target, option, viewerPath)
+    + jj.link.image (url, target, option, viewerPath)
+    + jj.link.pdf (url, target, option, viewerPath)
+    + jj.link.audio (url, target, option, viewerPath)
+    + jj.link.video (url, target, option, viewerPath)
+    + jj.link.flash (url, target, option, viewerPath)
 + [window.jj.event 객체](#window.jj.event 객체)
     + jj.event.addListener (eventType, handler)
     + jj.event.removeListener (eventType, handler)
@@ -288,31 +288,31 @@ ebook 컨텐츠를 내장된 epub 뷰어를 통해 호출합니다. ( `target`�
 - ##### jj.link.image(url, target, option, viewerPath)
 이미지(.png, .jpg, .gif) 파일을 내장된 뷰어를 통해 호출합니다. ( `target`을 생략한 경우 새창에서 열립니다. )
 ```
-jj.link.image('./content01/이미지.png', '_blank', option);
+jj.link.image('./content01/이미지.png', '_blank', option, viewerPath);
 ```
 
 - ##### jj.link.pdf(url, target, option, viewerPath)
 pdf 파일을 내장된 뷰어를 통해 호출합니다. ( `target`을 생략한 경우 새창에서 열립니다. )
 ```
-jj.link.pdf('./content01/학습자료.pdf', '_blank', option);
+jj.link.pdf('./content01/학습자료.pdf', '_blank', option, viewerPath);
 ```
 
 - ##### jj.link.audio(url, target, option, viewerPath)
 Audio(.mp3) 파일을 내장된 뷰어를 통해 호출합니다. ( `target`을 생략한 경우 새창에서 열립니다. )
 ```
-jj.link.audio('./content01/sound.mp3', '_blank', option);
+jj.link.audio('./content01/sound.mp3', '_blank', option, viewerPath);
 ```
 
 - ##### jj.link.video(url, target, option, viewerPath)
 Video(.mp4) 파일을 내장된 뷰어를 통해 호출합니다. ( `target`을 생략한 경우 새창에서 열립니다. )
 ```
-jj.link.video('./content01/강의.mp4', '_blank', option);
+jj.link.video('./content01/강의.mp4', '_blank', option, viewerPath);
 ```
 
 - ##### jj.link.flash(url, target, option, viewerPath)
 플래시(.swf) 파일을 내장된 뷰어를 통해 호출합니다. ( `target`을 생략한 경우 새창에서 열립니다. )
 ```
-jj.link.flash('./content01/game.swf', '_blank', option);
+jj.link.flash('./content01/game.swf', '_blank', option, viewerPath);
 ```
 
 **매개변수 설명**
