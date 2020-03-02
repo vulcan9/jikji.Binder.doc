@@ -337,12 +337,10 @@ jj.link.flash('./content01/game.swf', '_blank', option, viewerPath);
     + 별도의 뷰어에서 링크를 열고자 하는 경우 뷰어(html)의 경로를 지정합니다.
     
         ```
-        // 뷰어 경로 지정 방법
-        
-        // 1. resource 폴더로부터 상대경로 지정합니다.
+        // 뷰어 경로 지정 방법 : resource 폴더로부터 상대경로 지정합니다.
         jj.link.ebook('../ebook/?page=3', '_blank', null, '../../viewer/ebook/index.html')
         
-        // 2. 절대경로 지정합니다.
+        // 뷰어 경로 지정 방법 : 절대경로 지정합니다.
         jj.link.ebook('../ebook/?page=3', '_blank', null, '/viewer/ebook/index.html')
         ```
 
