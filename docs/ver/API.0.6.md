@@ -462,21 +462,20 @@ jj.native.download('경로 (String)', null, {
 ```
 
     + pathString (String) 다운로드 대상 경로
-    + callback (Function) 다운로드 완료시 호출되는 콜백 함수<notweb></notweb>
+    + callback (Function) 다운로드 완료시 호출되는 콜백 함수 (생략 가능)<notweb></notweb>
         + response : (String) 다운로드 창 선택 결과로 `'open'`, `'save'`, `'cancel'`, `'error'` 값중 하나가 전달 됩니다.
         + data : (Object) response 값에 따라 다음과 같이 전달 됩니다.
             - 'open' : 열기한 파일 경로
             - 'save' : 파일 다이얼로그 창에서 선택한 파일 저장 경로
             - 'cancel' : 전달값 없음
             - 'error' : 에러 내용 (에러가 발생한 경우)
-    + uiConfig (Object) 다운로드 팝업창<notweb></notweb>
+    + uiConfig (Object) 다운로드 팝업창 (생략 가능)<notweb></notweb>
         + path : (String) 다운로드 팝업창 UI 경로 (HTML)
         + width : (Number) 다운로드 팝업창 너비
         + height : (Number) 다운로드 팝업창 높이
         + parameter: (Any) 다운로드 팝업창에 전달할 데이터
     + <web>서버 mime 지원 여부에 따라 다운로드창 또는 실행창이 열릴 수 있습니다.</web>
-    + 다운로드 팝업창 페이지를 구현하는 방법은 샘플 경로의 해당 파일을 참고할것.  
-    (/app/js/ui/download.html)
+    + 다운로드 팝업창 페이지를 구현하는 방법은 샘플 경로의 해당 파일을 참고할것. (/app/js/ui/download.html)
 
 - ##### jj.native.zipDownload(config, callback, uiConfig) <notweb></notweb>
 지정된 파일들을 zip 파일로 묶어 다운로드 합니다.
@@ -502,16 +501,15 @@ jj.native.zipDownload({
         + root : `source`에 지정된 파일 또는 폴더가 압축될때 `root` 속성에 설정된 경로가 zip 파일 내에서 최상위 폴더로 설정됩니다.
         + source : 압축 파일에 포함시킬 파일 또는 디렉토리 경로 배열 입니다.
         `source`에 지정된 모든 요소들의 경로는 `root` 경로의 하위 경로여야 합니다.
-    + callback (Function)
+    + callback (Function) 다운로드 완료시 호출되는 콜백 함수 (생략 가능)
         + err : (String) 에러가 발생했을때 전달되는 에러 내용입니다..
         + zip : (String) 압축 파일이 저장(다운로드)된 경로입니다. 취소되었으면 `undefined` 값을 가집니다.
-    + uiConfig (Object) 다운로드 팝업창<notweb></notweb>
+    + uiConfig (Object) 다운로드 팝업창 설정 (생략 가능)<notweb></notweb>
         + path : (String) 다운로드 팝업창 UI 경로 (HTML)
         + width : (Number) 다운로드 팝업창 너비
         + height : (Number) 다운로드 팝업창 높이
         + parameter: (Any) 다운로드 팝업창에 전달할 데이터
-    + 다운로드 팝업창 페이지를 구현하는 방법은 샘플 경로의 해당 파일을 참고할것.    
-    (/app/js/ui/download_zip.html)
+    + 다운로드 팝업창 페이지를 구현하는 방법은 샘플 경로의 해당 파일을 참고할것. (/app/js/ui/download_zip.html)
         
 - ##### jj.native.zip(config, callback) <notweb></notweb>
 지정된 파일들을 zip 파일로 압축 합니다.
