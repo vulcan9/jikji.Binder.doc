@@ -36,8 +36,8 @@
     + jj.native.toggleFullscreen ()
     + jj.native.explorer (pathString) <notweb></notweb>
     + jj.native.exe (pathString) <notweb></notweb>
-    + jj.native.download (pathString, callback)
-    + jj.native.zipDownload (config, callback) <notweb></notweb>
+    + jj.native.download (pathString, callback, uiConfig)
+    + jj.native.zipDownload (config, callback, uiConfig) <notweb></notweb>
     + jj.native.zip (config, callback) <notweb></notweb>
 + [window.jj.io 객체](#window.jj.io 객체) <notweb></notweb>
     + jj.io.read (pathString, callback)
@@ -449,25 +449,36 @@ exe 파일을 실행 합니다. ppt와 같이 확장자가 exe가 아닌 경우 
 jj.native.exe('경로 (String)');
 ```
 
-- ##### jj.native.download(pathString, callback)
+- ##### jj.native.download(pathString, callback, uiConfig)
 해당 경로의 파일을 실행할 것인지 아니면 저장(또는 복사) 할 것인지를 묻는 다운로드 창을 열고 선택된 사항을 실행합니다.
 ```
 jj.native.download('경로 (String)', function(response, data){
     console.log(response, ': ', data);
 });
+jj.native.download('경로 (String)', null, {
+    width: 300, height: 80,
+    path: '../../js/ui/download.html'
+});
 ```
 
-    + pathString (String)
-    + callback (Function) <notweb></notweb>
+    + pathString (String) 다운로드 대상 경로
+    + callback (Function) 다운로드 완료시 호출되는 콜백 함수<notweb></notweb>
         + response : (String) 다운로드 창 선택 결과로 `'open'`, `'save'`, `'cancel'`, `'error'` 값중 하나가 전달 됩니다.
         + data : (Object) response 값에 따라 다음과 같이 전달 됩니다.
             - 'open' : 열기한 파일 경로
             - 'save' : 파일 다이얼로그 창에서 선택한 파일 저장 경로
             - 'cancel' : 전달값 없음
             - 'error' : 에러 내용 (에러가 발생한 경우)
+    + uiConfig (Object) 다운로드 팝업창<notweb></notweb>
+        + path : (String) 다운로드 팝업창 UI 경로 (HTML)
+        + width : (Number) 다운로드 팝업창 너비
+        + height : (Number) 다운로드 팝업창 높이
+        + parameter: (Any) 다운로드 팝업창에 전달할 데이터
     + <web>서버 mime 지원 여부에 따라 다운로드창 또는 실행창이 열릴 수 있습니다.</web>
+    + 다운로드 팝업창 페이지를 구현하는 방법은 샘플 경로의 해당 파일을 참고할것.  
+    (/app/js/ui/download.html)
 
-- ##### jj.native.zipDownload(config, callback) <notweb></notweb>
+- ##### jj.native.zipDownload(config, callback, uiConfig) <notweb></notweb>
 지정된 파일들을 zip 파일로 묶어 다운로드 합니다.
 ```
 jj.native.zipDownload({
@@ -479,6 +490,9 @@ jj.native.zipDownload({
     ]
 }, function(err, zip){
     console.log('다운로드된 압축파일 경로 : ', zip);
+}, {
+    width: 300, height: 80,
+    path: '../../js/ui/download_zip.html'
 });
 ```
 
@@ -491,7 +505,14 @@ jj.native.zipDownload({
     + callback (Function)
         + err : (String) 에러가 발생했을때 전달되는 에러 내용입니다..
         + zip : (String) 압축 파일이 저장(다운로드)된 경로입니다. 취소되었으면 `undefined` 값을 가집니다.
-
+    + uiConfig (Object) 다운로드 팝업창<notweb></notweb>
+        + path : (String) 다운로드 팝업창 UI 경로 (HTML)
+        + width : (Number) 다운로드 팝업창 너비
+        + height : (Number) 다운로드 팝업창 높이
+        + parameter: (Any) 다운로드 팝업창에 전달할 데이터
+    + 다운로드 팝업창 페이지를 구현하는 방법은 샘플 경로의 해당 파일을 참고할것.    
+    (/app/js/ui/download_zip.html)
+        
 - ##### jj.native.zip(config, callback) <notweb></notweb>
 지정된 파일들을 zip 파일로 압축 합니다.
 ```
