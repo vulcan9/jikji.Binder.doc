@@ -39,6 +39,7 @@
     + jj.native.download (pathString, callback, uiConfig)
     + jj.native.zipDownload (config, callback, uiConfig) <notweb></notweb>
     + jj.native.zip (config, callback) <notweb></notweb>
+    + jj.native.capturePage(pathString, crop, callback) <notweb></notweb>
 + [window.jj.io 객체](#window.jj.io 객체) <notweb></notweb>
     + jj.io.read (pathString, callback)
     + jj.io.write (pathString, content, callback)
@@ -536,6 +537,35 @@ jj.native.zip({
         + err : (String) 에러가 발생했을때 전달되는 에러 내용입니다..
         + zip : (String) 압축 파일이 저장(다운로드)된 경로입니다. 취소되었으면 `undefined` 값을 가집니다.
 
+
+- ##### jj.native.capturePage(pathString, crop, callback) <notweb></notweb>
+`(0.6.2 추가됨)` 파일 경로를 전달받아 캡쳐 이미지를 저장하고 raw 데이터를 반환합니다.
+```
+// 화면 캡쳐
+var savePath = 'capture/image.png';
+jj.native.capturePage(savePath, function (err, raw){
+    // raw data
+    // "/user/capture/image.png" 파일이 생성됨
+});
+
+// 영역 지정하여 화면 캡쳐
+var cropRange = {x:100, y:100, width:200, height:200};
+jj.native.capturePage(savePath, cropRange, function (err, raw){
+    // raw data
+    // "/user/capture/image.png" 파일이 생성됨
+});
+```
+
+    + `savePath` : (String) 캡쳐이미지 저장 경로입니다.
+        - user 폴더를 root folder로 사용합니다.
+    + cropRange (Object)
+        + x : 캡쳐 시작 X 위치 (기본값: 0)
+        + y : 캡쳐 시작 Y 위치 (기본값: 0)
+        + width : 캡쳐할 영역의 너비 (기본값: 창 너비)
+        + height : 캡쳐할 영역의 높이 (기본값: 창 높이)
+    + callback (Function)
+        + err : (String) 에러가 발생했을때 전달되는 에러 내용입니다..
+        + raw : (String) 저장된 캡쳐 이미지의 base64 인코딩된 데이터
 
 <a name="window.jj.io 객체"></a>
 
