@@ -540,6 +540,7 @@ jj.native.zip({
 
 - ##### jj.native.capturePage(pathString, crop, callback) <notweb></notweb>
 `(0.6.2 추가됨)` 파일 경로를 전달받아 캡쳐 이미지를 저장하고 raw 데이터를 반환합니다.
+
 ```
 // 화면 캡쳐
 var savePath = 'capture/image.png';
