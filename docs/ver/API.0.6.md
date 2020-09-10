@@ -607,31 +607,43 @@ jj.native.capturePage(savePath, cropRange, function (err, raw){
 
 다음 API들은 모두 위에서 설명한 경로 표기 방식을 따릅니다.
 
-- ##### jj.io.read(pathString, callback) <notweb></notweb>
+- ##### jj.io.read(pathString, [option,] [callback]) <notweb></notweb>
 `pathString` 경로(`user` 폴더 하위 경로)에 파일을 읽습니다.
 ```
 jj.io.read(pathString, function(err, content){
     if(err) return alert(err);
     // 파일 읽기 성공 : content
 });
+jj.io.read(pathString, option, function(err, content){
+    if(err) return alert(err);
+    // 파일 읽기 성공 : content
+});
 ```
 
 + `content` : 읽어들인 파일 내용 입니다.
-    - 읽기, 쓰기 동작은 `utf-8`로 인코딩/디코딩 됩니다.
-    - 문자열만 읽고 쓸 수 있습니다.
+    - (0.6.2 이전) 읽기, 쓰기 동작은 `utf-8`로 인코딩/디코딩 됩니다.
+    - (0.6.2 이전) 문자열만 읽고 쓸 수 있습니다.
++ `option` : (0.6.2 이후) 읽기 인코딩을 설정할 수 있습니다.
+    - `{encoding:'utf8'}` 또는 `{encoding: 'binary'}`
 
-- ##### jj.io.write(pathString, content, callback) <notweb></notweb>
+- ##### jj.io.write(pathString, content, [option,] [callback]) <notweb></notweb>
 `pathString` 경로(`user` 폴더 하위 경로)에 파일을 기록합니다.
 ```
 jj.io.write(pathString, content, function(err){
     if(err) return alert(err);
     // 파일 쓰기 성공!
 });
+jj.io.write(pathString, content, option, function(err){
+    if(err) return alert(err);
+    // 파일 쓰기 성공!
+});
 ```
 
 + `content` : 쓰기할 파일 내용 입니다.
-    - 읽기, 쓰기 동작은 `utf-8`로 인코딩/디코딩 됩니다.
-    - 문자열만 읽고 쓸 수 있습니다.
+    - (0.6.2 이전) 읽기, 쓰기 동작은 `utf-8`로 인코딩/디코딩 됩니다.
+    - (0.6.2 이전) 문자열만 읽고 쓸 수 있습니다.
++ `option` : (0.6.2 이후) 쓰기 인코딩을 설정할 수 있습니다.
+    - `{encoding:'utf8'}` 또는 `{encoding: 'binary'}`
 
 - ##### jj.io.copy (sourcePath, destPath, callback) <notweb></notweb>
 `sourcePath` 경로의 파일을 `destPath` 경로로 복사 합니다.
