@@ -1,4 +1,4 @@
-# jik-ji-Binder
+# jikji.Binder
 jik-ji Binder 프로젝트 이슈, 프로젝트 관리
 
 ### Documents
