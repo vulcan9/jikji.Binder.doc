@@ -3,9 +3,9 @@ jik-ji Binder 프로젝트 이슈, 프로젝트 관리
 
 ### Documents
 
-[API Documents](https://vulcan9.github.io/jik-ji-Binder/)
+[API Documents](https://vulcan9.github.io/jikji.Binder.doc/)
 
-[Wiki](https://github.com/vulcan9/jik-ji-Binder/wiki)
+[Wiki](https://github.com/vulcan9/jikji.Binder.doc/wiki)
 
 ### License
 

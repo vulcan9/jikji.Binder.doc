@@ -22,6 +22,6 @@
 --------------------------------------------
 
 * 다음 사이트에서 관리함
-https://github.com/vulcan9/jik-ji-Binder/issues
+https://github.com/vulcan9/jikji.Binder.doc/issues
 
 

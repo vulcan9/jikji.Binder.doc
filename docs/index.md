@@ -1,6 +1,6 @@
-# jik-ji-Binder
+# jikji.Binder
 
-`jik-ji-Binder`는 Web 기술(HTML, CSS, Javascript)을 사용하여 Desktop 어플리케이션을 만들수 있도록 도와주는 도구입니다.
+`jik-ji Binder`는 Web 기술(HTML, CSS, Javascript)을 사용하여 Desktop 어플리케이션을 만들수 있도록 도와주는 도구입니다.
 
 ### Demo
 
@@ -15,7 +15,7 @@ function demo(url){
   if(parent!==window && parent.jj){
     parent.jj.link.html(url, 'demo_window', {});
   }else{
-    alert('jik-ji-Binder에서 실행해야 합니다.');
+    alert('jikji.Binder에서 실행해야 합니다.');
   }
 }
 </script>
