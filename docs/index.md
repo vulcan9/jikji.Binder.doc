@@ -18,6 +18,7 @@ function demo(url){
     alert('jikji.Binder에서 실행해야 합니다.');
     if(window.nw){
         window.nw.App.addOriginAccessWhitelistEntry('https://vulcan9.github.io/', 'chrome-extension', location.host, true);
+        window.location.href = url;
     }
   }
 }
