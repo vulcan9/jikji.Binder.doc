@@ -12,8 +12,11 @@
 
 <script>
 function demo(url){
-  
+  if(parent!==window && parent.jj){
     parent.jj.link.html(url, 'demo_window', {});
+  }else{
+    alert('jikji.Binder에서 실행해야 합니다.');
+  }
 }
 </script>
 
