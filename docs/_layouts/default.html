@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Jik-ji Binder 문서</title>
-    <!--<base href="https://vulcan9.github.io/jikji.Binder.doc/">-->
+    <!--
+    base 태그를 사용하지 않고 링크를 걸어주어야한다.
+    base 태그를 지정하면 hash 링크가 잘못된 경로로 이동된다.
+    <base href="https://vulcan9.github.io/jikji.Binder.doc/">
+    -->
 
     {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
