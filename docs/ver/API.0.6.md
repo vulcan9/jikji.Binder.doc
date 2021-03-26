@@ -315,9 +315,8 @@ jj.link.video('./content01/강의.mp4', '_blank', option, viewerPath);
 ```
 jj.link.flash('./content01/game.swf', '_blank', option, viewerPath);
 ```
-
-<div style="color: red;">Jik-ji_Binder_0.9.0 버전부터 Flash Player가 지원되지 않습니다.</div>  
-
+  
+### `Jik-ji_Binder_0.9.0` 버전부터 Flash Player가 지원되지 않습니다.
 > The Chromium Projects Flash Roadmap ( https://www.chromium.org/flash-roadmap )
 
 
