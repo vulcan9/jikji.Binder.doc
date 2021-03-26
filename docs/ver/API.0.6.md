@@ -316,8 +316,11 @@ jj.link.video('./content01/강의.mp4', '_blank', option, viewerPath);
 jj.link.flash('./content01/game.swf', '_blank', option, viewerPath);
 ```
 
-> `Jik-ji_Binder_0.9.0` 버전부터 Flash Player가 지원되지 않습니다.  
-> The Chromium Projects Flash Roadmap ( https://www.chromium.org/flash-roadmap ) 
+<div style="color: red;">Jik-ji_Binder_0.9.0 버전부터 Flash Player가 지원되지 않습니다.</div>  
+
+> The Chromium Projects Flash Roadmap ( https://www.chromium.org/flash-roadmap )
+
+
 
 **매개변수 설명**
 링크 관련 메서드에 적용되는 인자는 모두 동일한 형식입니다.
