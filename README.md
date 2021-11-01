@@ -1,4 +1,4 @@
-# jikji.Binder 프로젝트 이동됨
+# jikji.Binder.doc 프로젝트 이동됨
 이곳은 더이상 업데이트되지 않습니다. 다음 경로로 이동되었습니다. (private)  
 [tovsoft/jikji.Binder.doc](https://github.com/tovsoft/jikji.Binder.doc/)  
 
